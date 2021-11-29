@@ -8,6 +8,21 @@ The tagger is a tool allowing you to upload several patches (small images) and t
 
 ## Installing
 
+### Using Docker
+
+You can start tagger by using `docker-compose.yml`. Just run:
+
+    docker-compose up
+
+It will:
+
+ 1. Start Apache2+PHP7+tagger
+ 1. Start MariaDB (drop-in replacement for MySQL)
+ 1. Create DB schema
+ 1. Create user `admin` with password `admin` and `ROLE_ADMIN` role
+
+One can use `console` commands mentioned below if connected to container using regular shell (typically container name is `tagger-tagger-1`).
+
 ### Cloning and getting dependencies
 
 The current version is based on the Symfony framework and require a MySQL database.
