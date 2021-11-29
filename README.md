@@ -22,6 +22,7 @@ It will:
  1. Create user `admin` with password `admin` and `ROLE_ADMIN` role
 
 One can use `console` commands mentioned below if connected to container using regular shell (typically container name is `tagger-tagger-1`).
+Working directory for application is `/var/www`. App configuration file can be found at `/var/www/.env`.
 
 ### Cloning and getting dependencies
 
